@@ -1,0 +1,71 @@
+header {
+  width: 100%;
+  height: 596px;
+  background-color: #87509c;
+}
+header .cuda {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1140px;
+  padding-top: 57px;
+}
+header .cuda .logo {
+  margin-left: 68px;
+}
+header .cuda .nav-menu {
+  display: flex;
+}
+header .cuda .nav-menu li {
+  margin-right: 1px;
+}
+header .cuda .nav-menu li a {
+  font-family: titillium_webregular, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+header .cuda .nav-menu li a:hover {
+  height: 32px;
+  background-color: #643a79;
+  border-radius: 5px;
+}
+header .col-12 {
+  margin: 145px auto;
+}
+header .col-12 p {
+  font-family: titillium_webregular, sans-serif;
+  font-size: 39px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #f7f3ea;
+  letter-spacing: 1.9px;
+  margin-left: 6px;
+  text-align: center;
+  margin-bottom: 33px;
+  margin-top: -12px;
+}
+header .col-12 p:nth-child(2) {
+  margin-top: -12px;
+  margin-left: 16px;
+  letter-spacing: 2px;
+}
+header .col-12 .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-left: 15px;
+}
+header .col-12 .button a {
+  font-family: titillium_webregular, sans-serif;
+  font-size: 18px;
+  line-height: 68px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-left: 3px;
+  color: #ffffff;
+  position: absolute;
+}
+/*# sourceMappingURL=header.css.map */
