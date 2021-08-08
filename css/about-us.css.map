@@ -1,0 +1,1 @@
+{"version":3,"sources":["about-us.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA","file":"about-us.css","sourcesContent":[".about-us{\n  width: 100%;\n  height: 894px;\n  background-color: #d74680;\n}"]}
