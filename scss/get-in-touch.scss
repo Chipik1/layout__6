@@ -1,0 +1,105 @@
+.get-in-touch{
+  width: 100%;
+  height: 819px;
+  background-color: #3c5499;
+  .col-12{
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    h1 {
+      text-align: center;
+      font-family: titillium_webregular, sans-serif;
+      font-size: 37px;
+      line-height: 28px;
+      font-weight: bold;
+      letter-spacing: 5.7px;
+      margin-left: 5px;
+      color: #ffffff;
+      padding-top: 120px;
+    }
+    .line {
+      display: flex;
+      justify-content: center;
+      margin-top: 11px;
+      img {
+        opacity: 0.14;
+        margin-top: 3px;
+      }
+    }
+    p{
+      font-family: titillium_webregular, sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 0.45px;
+      color: #ffffff;
+      text-align: center;
+      margin-left: 3px;
+      margin-top: 17px;
+    }
+  }
+  .form{
+    width: 1140px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 59px;
+    input{
+      width: 414px;
+      height: 56px;
+      background-color: #273a71;
+      border: none;
+      border-radius: 5px;
+      padding-top: 7px;
+      padding-left: 3px;
+    }
+    input::placeholder{
+      font-family: titillium_webregular, sans-serif;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      padding-left: 22px;
+      color: #ffffff;
+    }
+    input:nth-child(1){
+      margin-left: 140px;
+    }
+    input:nth-child(2){
+      margin-left: 28px;
+    }
+    input:last-child{
+      width: 860px;
+      height: 200px;
+      background-color: #273a71;
+      border: none;
+      border-radius: 5px;
+      padding-bottom: 141px;
+      padding-left: 3px;
+      margin-top: 27px;
+      margin-left: 140px;
+    }
+    input::placeholder:after{
+      content: "*";
+      color: #ff4444;
+    }
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+    margin-left: 1px;
+    a{
+      font-family: titillium_webregular, sans-serif;
+      font-size: 18px;
+      line-height: 68px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-left: 1px;
+      color: #ffffff;
+      text-decoration: none;
+      position: absolute;
+    }
+  }
+}
