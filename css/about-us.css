@@ -46,10 +46,10 @@
   margin: auto;
   padding-top: 54px;
 }
-.about-us .comment-up .col-6 {
+.about-us .comment-up .col-lg-6 {
   display: flex;
 }
-.about-us .comment-up .col-6 p {
+.about-us .comment-up .col-lg-6 p {
   font-family: titillium_webregular, sans-serif;
   font-size: 21px;
   line-height: 31px;
@@ -59,7 +59,7 @@
   color: #ffffff;
   padding-left: 47px;
 }
-.about-us .comment-up .col-6 h2 {
+.about-us .comment-up .col-lg-6 h2 {
   font-family: titillium_webregular, sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -70,7 +70,7 @@
   margin-left: 48px;
   margin-top: 6px;
 }
-.about-us .comment-up .col-6 h3 {
+.about-us .comment-up .col-lg-6 h3 {
   font-family: titillium_webregular, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -80,29 +80,29 @@
   margin-left: 49px;
   margin-top: -8px;
 }
-.about-us .comment-up .col-6 img {
+.about-us .comment-up .col-lg-6 img {
   margin-left: 6px;
   margin-top: -4px;
 }
-.about-us .comment-up .col-6 .text {
+.about-us .comment-up .col-lg-6 .text {
   display: flex;
   flex-direction: column;
 }
-.about-us .comment-up .col-6:nth-child(2) img {
+.about-us .comment-up .col-lg-6:nth-child(2) img {
   margin-left: 24px;
   margin-top: -4px;
 }
-.about-us .comment-up .col-6:nth-child(2) p {
+.about-us .comment-up .col-lg-6:nth-child(2) p {
   margin-top: -1px;
   letter-spacing: 0.19px;
   padding-left: 47px;
 }
-.about-us .comment-up .col-6:nth-child(2) h2 {
+.about-us .comment-up .col-lg-6:nth-child(2) h2 {
   letter-spacing: 0.6px;
   margin-left: 47px;
   margin-top: 7px;
 }
-.about-us .comment-up .col-6:nth-child(2) h3 {
+.about-us .comment-up .col-lg-6:nth-child(2) h3 {
   margin-left: 48px;
   margin-top: -8px;
 }
@@ -112,10 +112,10 @@
   margin: auto;
   padding-top: 140px;
 }
-.about-us .comment-down .col-6 {
+.about-us .comment-down .col-lg-6 {
   display: flex;
 }
-.about-us .comment-down .col-6 p {
+.about-us .comment-down .col-lg-6 p {
   font-family: titillium_webregular, sans-serif;
   font-size: 21px;
   line-height: 31px;
@@ -127,7 +127,7 @@
   padding-right: 17px;
   margin-top: -3px;
 }
-.about-us .comment-down .col-6 h2 {
+.about-us .comment-down .col-lg-6 h2 {
   font-family: titillium_webregular, sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -138,7 +138,7 @@
   margin-left: 48px;
   margin-top: 8px;
 }
-.about-us .comment-down .col-6 h3 {
+.about-us .comment-down .col-lg-6 h3 {
   font-family: titillium_webregular, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -148,33 +148,58 @@
   margin-left: 49px;
   margin-top: -8px;
 }
-.about-us .comment-down .col-6 img {
+.about-us .comment-down .col-lg-6 img {
   margin-left: 6px;
   margin-top: -6px;
 }
-.about-us .comment-down .col-6 .text {
+.about-us .comment-down .col-lg-6 .text {
   display: flex;
   flex-direction: column;
 }
-.about-us .comment-down .col-6:nth-child(2) img {
+.about-us .comment-down .col-lg-6:nth-child(2) img {
   margin-left: 25px;
   margin-top: -6px;
 }
-.about-us .comment-down .col-6:nth-child(2) p {
+.about-us .comment-down .col-lg-6:nth-child(2) p {
   margin-top: -3px;
   letter-spacing: 0.1px;
   padding-left: 0;
   margin-left: 44px;
   margin-right: -17px;
 }
-.about-us .comment-down .col-6:nth-child(2) h2 {
+.about-us .comment-down .col-lg-6:nth-child(2) h2 {
   letter-spacing: 0.7px;
   margin-left: 44px;
   margin-top: 8px;
 }
-.about-us .comment-down .col-6:nth-child(2) h3 {
+.about-us .comment-down .col-lg-6:nth-child(2) h3 {
   margin-left: 45px;
   letter-spacing: 0.5px;
   margin-top: -8px;
+}
+
+@media (max-device-width: 1146px) {
+  .about-us {
+    height: 100%;
+  }
+  .about-us .comment-up {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .about-us .comment-down {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-device-width: 991px) {
+  .about-us .comment-up .col-lg-6:nth-child(2) img {
+    margin-left: 8px;
+  }
+  .about-us .comment-down {
+    padding-top: 12px;
+  }
+  .about-us .comment-down .col-lg-6:nth-child(2) img {
+    margin-left: 10px;
+  }
 }
 /*# sourceMappingURL=about-us.css.map */

@@ -71,4 +71,11 @@ header{
     }
   }
 }
+@media (max-device-width: 1151px) {
+  header{
+    .cuda{
+      width: 100%;
+    }
+  }
+}
 

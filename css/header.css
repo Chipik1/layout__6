@@ -70,4 +70,10 @@ header .col-12 .button a {
   color: #ffffff;
   position: absolute;
 }
+
+@media (max-device-width: 1151px) {
+  header .cuda {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=header.css.map */

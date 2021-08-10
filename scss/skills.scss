@@ -1,13 +1,10 @@
+@import "mixins";
 .skills{
   width: 100%;
   height: 655px;
   background-color: #ffffff;
   .col-12{
-    width: 1140px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
+    @include title;
     h1 {
       text-align: center;
       font-family: titillium_webregular, sans-serif;
@@ -20,36 +17,19 @@
       padding-top: 117px;
     }
     .line {
-      display: flex;
-      justify-content: center;
-      margin-top: 13px;
-      img {
-        opacity: 0.14;
-        margin-top: 3px;
+      @include line;
+      img{
+        margin-top: 2px;
       }
     }
-    p{
-      font-family: titillium_webregular, sans-serif;
-      font-size: 18.6px;
-      line-height: 26px;
-      font-weight: 400;
-      letter-spacing: 0.14px;
-      color: #3c4761;
-      text-align: center;
-      margin-top: 16px;
-    }
-    p:last-child{
-      margin-top: -16px;
-      letter-spacing: 0.15px;
-      margin-left: 4px;
-    }
+    @include p;
   }
   .icon-wrapper{
     width: 1140px;
     display: flex;
     margin: auto;
     padding-top: 66px;
-    .col-3{
+    .col-lg-3{
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -90,7 +70,7 @@
       }
     }
 
-    .col-3:nth-child(1){
+    .col-lg-3:nth-child(1){
       img{
         margin-left: 55px;
       }
@@ -106,7 +86,7 @@
         margin-left: 17px;
       }
     }
-    .col-3:nth-child(2){
+    .col-lg-3:nth-child(2){
       img{
         margin-left: 50px;
       }
@@ -122,7 +102,7 @@
         margin-left: 7px;
       }
     }
-    .col-3:nth-child(3){
+    .col-lg-3:nth-child(3){
       img{
         margin-left: 44px;
       }
@@ -138,7 +118,7 @@
         margin-right: 3px;
       }
     }
-    .col-3:nth-child(4){
+    .col-lg-3:nth-child(4){
       img{
         margin-left: 40px;
       }
@@ -152,6 +132,52 @@
       }
       h2{
         margin-right: 15px;
+      }
+    }
+  }
+}
+@media (max-device-width: 1146px) {
+    .skills{
+      .icon-wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+}
+@media (max-device-width: 991px) {
+  .skills{
+    height: 100%;
+    .icon-wrapper{
+      width: 100%;
+      flex-wrap: wrap;
+      .col-lg-3{
+        align-items: center;
+      }
+      .col-lg-3:nth-child(1){
+        img{
+          margin-left: 0;
+        }
+      }
+      .col-lg-3:nth-child(2){
+        img{
+          margin-left: 0;
+        }
+      }
+      .col-lg-3:nth-child(3){
+        img{
+          margin-left: 0;
+        }
+        p{
+          margin-right: 0;
+        }
+      }
+      .col-lg-3:nth-child(4){
+        img{
+          margin-left: 0;
+        }
+        p{
+          margin-right: 0;
+        }
       }
     }
   }

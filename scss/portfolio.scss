@@ -1,13 +1,10 @@
+@import "mixins";
 .portfolio{
   width: 100%;
   height: 1423px;
   background-color: #ffdd99;
   .col-12{
-    width: 1140px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
+    @include title;
     h1 {
       text-align: center;
       font-family: titillium_webregular, sans-serif;
@@ -28,21 +25,7 @@
         margin-top: 3px;
       }
     }
-    p{
-      font-family: titillium_webregular, sans-serif;
-      font-size: 18.6px;
-      line-height: 26px;
-      font-weight: 400;
-      letter-spacing: 0.14px;
-      color: #3c4761;
-      text-align: center;
-      margin-top: 16px;
-    }
-    p:last-child{
-      margin-top: -16px;
-      letter-spacing: 0.15px;
-      margin-left: 4px;
-    }
+    @include p;
   }
   .features{
     display: flex;
@@ -214,6 +197,18 @@
       color: #ffffff;
       text-decoration: none;
       position: absolute;
+    }
+  }
+}
+@media (max-device-width 1151px) {
+  .portfolio{
+    .icon-wrapper-up{
+      .col-6:nth-child(1){
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }

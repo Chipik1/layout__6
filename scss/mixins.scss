@@ -1,0 +1,41 @@
+@mixin font-h1{
+  text-align: center;
+  font-family: titillium_webregular, sans-serif;
+  font-size: 37px;
+  line-height: 28px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+@mixin title{
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+@mixin line{
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+  img {
+    opacity: 0.14;
+    margin-top: 3px;
+  }
+}
+@mixin p{
+  p{
+    font-family: titillium_webregular, sans-serif;
+    font-size: 18.6px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    color: #3c4761;
+    text-align: center;
+    margin-top: 16px;
+  }
+  p:last-child{
+    margin-top: -16px;
+    letter-spacing: 0.15px;
+    margin-left: 4px;
+  }
+}
