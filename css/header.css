@@ -76,4 +76,15 @@ header .col-12 .button a {
     width: 100%;
   }
 }
+@media (max-device-width: 832px) {
+  header .cuda .logo {
+    margin-left: 12px;
+  }
+  header .col-12 {
+    margin: 70px auto;
+  }
+  header .col-12 p {
+    line-height: 38px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

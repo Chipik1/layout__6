@@ -16,6 +16,7 @@
   font-size: 37px;
   line-height: 28px;
   font-weight: bold;
+  letter-spacing: 6px;
   letter-spacing: 5.7px;
   margin-left: 5px;
   color: #ffffff;
@@ -24,6 +25,7 @@
 .get-in-touch .col-12 .line {
   display: flex;
   justify-content: center;
+  margin-top: 13px;
   margin-top: 11px;
 }
 .get-in-touch .col-12 .line img {
@@ -102,5 +104,38 @@
   color: #ffffff;
   text-decoration: none;
   position: absolute;
+}
+
+@media (max-device-width: 1146px) {
+  .get-in-touch {
+    width: 100%;
+  }
+  .get-in-touch .form {
+    width: 90%;
+  }
+  .get-in-touch .form input:first-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .get-in-touch .form input:nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .get-in-touch .form input:last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .get-in-touch .button {
+    margin-top: 24px;
+  }
+}
+@media (max-device-width: 328px) {
+  .get-in-touch .col-12 h1 {
+    line-height: 38px;
+  }
+  .get-in-touch .form {
+    padding-top: 4px;
+  }
 }
 /*# sourceMappingURL=get-in-touch.css.map */

@@ -127,31 +127,7 @@
     display: flex;
     margin: auto;
     padding-top: 60px;
-    .col-6{
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      span{
-        font-family: titillium_webregular, sans-serif;
-        font-size: 18px;
-        line-height: 19px;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.02em;
-        color: #393939;
-      }
-      h2{
-        font-family: titillium_webregular, sans-serif;
-        font-size: 18px;
-        line-height: 19px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #393939;
-      }
-    }
+    @include col-6-portfolio;
     .col-6:nth-child(1){
       img{
         margin-left: 7px;
@@ -200,14 +176,61 @@
     }
   }
 }
-@media (max-device-width 1151px) {
-  .portfolio{
+@media (max-device-width: 1151px) {
+  .portfolio {
+    height: 100%;
+    .features{
+      width: 100%;
+    }
     .icon-wrapper-up{
+      width: 100%;
       .col-6:nth-child(1){
         img{
           width: 100%;
           height: 100%;
         }
+      }
+      .col-6:nth-child(2){
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .icon-wrapper-down{
+      width: 100%;
+      .col-6:nth-child(1){
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .col-6:nth-child(2){
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .button{
+      padding-bottom: 40px;
+    }
+  }
+}
+@media (max-device-width: 480px){
+  .features {
+    .col-2 {
+      a {
+        background-color: #ffdd99;
+      }
+    }
+  }
+}
+@media (max-device-width: 374px) {
+  .portfolio{
+    .col-12{
+      h1{
+        line-height: 38px;
       }
     }
   }

@@ -237,4 +237,9 @@
     flex-wrap: wrap;
   }
 }
+@media (max-device-width: 620px) {
+  .team .col-12 h1 {
+    line-height: 38px;
+  }
+}
 /*# sourceMappingURL=team.css.map */

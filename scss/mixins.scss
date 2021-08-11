@@ -39,3 +39,30 @@
     margin-left: 4px;
   }
 }
+@mixin col-6-portfolio{
+  .col-6{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    span{
+      font-family: titillium_webregular, sans-serif;
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: #393939;
+    }
+    h2{
+      font-family: titillium_webregular, sans-serif;
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #393939;
+    }
+  }
+}

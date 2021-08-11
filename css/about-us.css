@@ -202,4 +202,9 @@
     margin-left: 10px;
   }
 }
+@media (max-device-width: 645px) {
+  .about-us .col-12 h1 {
+    line-height: 38px;
+  }
+}
 /*# sourceMappingURL=about-us.css.map */

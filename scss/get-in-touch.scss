@@ -6,24 +6,15 @@
   .col-12{
     @include title;
     h1 {
-      text-align: center;
-      font-family: titillium_webregular, sans-serif;
-      font-size: 37px;
-      line-height: 28px;
-      font-weight: bold;
+      @include font-h1;
       letter-spacing: 5.7px;
       margin-left: 5px;
       color: #ffffff;
       padding-top: 120px;
     }
     .line {
-      display: flex;
-      justify-content: center;
+      @include line;
       margin-top: 11px;
-      img {
-        opacity: 0.14;
-        margin-top: 3px;
-      }
     }
     p{
       font-family: titillium_webregular, sans-serif;
@@ -100,3 +91,40 @@
     }
   }
 }
+@media (max-device-width: 1146px) {
+  .get-in-touch{
+    width: 100%;
+    .form{
+      width: 90%;
+      input:first-child{
+        width: 100%;
+        margin-left: 0;
+      }
+      input:nth-child(2){
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      input:last-child{
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .button{
+      margin-top: 24px;
+    }
+  }
+}
+@media (max-device-width: 328px){
+  .get-in-touch {
+    .col-12{
+      h1{
+        line-height: 38px;
+      }
+    }
+    .form {
+      padding-top: 4px;
+    }
+  }
+}
+

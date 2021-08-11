@@ -78,4 +78,19 @@ header{
     }
   }
 }
+@media(max-device-width: 832px){
+  header{
+    .cuda {
+      .logo {
+        margin-left: 12px;
+      }
+    }
+    .col-12{
+      margin: 70px auto;
+      p{
+        line-height: 38px;
+      }
+    }
+  }
+}
 

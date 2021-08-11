@@ -76,6 +76,17 @@ header .col-12 .button a {
     width: 100%;
   }
 }
+@media (max-device-width: 832px) {
+  header .cuda .logo {
+    margin-left: 12px;
+  }
+  header .col-12 {
+    margin: 70px auto;
+  }
+  header .col-12 p {
+    line-height: 38px;
+  }
+}
 @font-face {
   font-family: "titillium_webregular";
   src: url("/fonts/titilliumweb-regular-webfont.woff2") format("woff2"), url("/fonts/titilliumweb-regular-webfont.woff") format("woff");
@@ -241,6 +252,11 @@ header .col-12 .button a {
   }
   .services-wrapper .icon-wrapper .col-lg-3:nth-child(2) img {
     margin-left: 52px;
+  }
+}
+@media (max-device-width: 514px) {
+  .services-wrapper .col-12 h1 {
+    line-height: 38px;
   }
 }
 .team {
@@ -482,6 +498,11 @@ header .col-12 .button a {
     flex-wrap: wrap;
   }
 }
+@media (max-device-width: 620px) {
+  .team .col-12 h1 {
+    line-height: 38px;
+  }
+}
 .skills {
   width: 100%;
   height: 655px;
@@ -669,6 +690,11 @@ header .col-12 .button a {
   }
   .skills .icon-wrapper .col-lg-3:nth-child(4) p {
     margin-right: 0;
+  }
+}
+@media (max-device-width: 365px) {
+  .skills .col-12 h1 {
+    line-height: 38px;
   }
 }
 .portfolio {
@@ -875,10 +901,47 @@ header .col-12 .button a {
   position: absolute;
 }
 
-@media (max-device-width 1151px) {
+@media (max-device-width: 1151px) {
+  .portfolio {
+    height: 100%;
+  }
+  .portfolio .features {
+    width: 100%;
+  }
+  .portfolio .icon-wrapper-up {
+    width: 100%;
+  }
   .portfolio .icon-wrapper-up .col-6:nth-child(1) img {
     width: 100%;
     height: 100%;
+  }
+  .portfolio .icon-wrapper-up .col-6:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio .icon-wrapper-down {
+    width: 100%;
+  }
+  .portfolio .icon-wrapper-down .col-6:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio .icon-wrapper-down .col-6:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio .button {
+    padding-bottom: 40px;
+  }
+}
+@media (max-device-width: 480px) {
+  .features .col-2 a {
+    background-color: #ffdd99;
+  }
+}
+@media (max-device-width: 374px) {
+  .portfolio .col-12 h1 {
+    line-height: 38px;
   }
 }
 .about-us {
@@ -1085,6 +1148,11 @@ header .col-12 .button a {
     margin-left: 10px;
   }
 }
+@media (max-device-width: 645px) {
+  .about-us .col-12 h1 {
+    line-height: 38px;
+  }
+}
 .get-in-touch {
   width: 100%;
   height: 819px;
@@ -1103,6 +1171,7 @@ header .col-12 .button a {
   font-size: 37px;
   line-height: 28px;
   font-weight: bold;
+  letter-spacing: 6px;
   letter-spacing: 5.7px;
   margin-left: 5px;
   color: #ffffff;
@@ -1111,6 +1180,7 @@ header .col-12 .button a {
 .get-in-touch .col-12 .line {
   display: flex;
   justify-content: center;
+  margin-top: 13px;
   margin-top: 11px;
 }
 .get-in-touch .col-12 .line img {
@@ -1191,6 +1261,38 @@ header .col-12 .button a {
   position: absolute;
 }
 
+@media (max-device-width: 1146px) {
+  .get-in-touch {
+    width: 100%;
+  }
+  .get-in-touch .form {
+    width: 90%;
+  }
+  .get-in-touch .form input:first-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .get-in-touch .form input:nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .get-in-touch .form input:last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .get-in-touch .button {
+    margin-top: 24px;
+  }
+}
+@media (max-device-width: 328px) {
+  .get-in-touch .col-12 h1 {
+    line-height: 38px;
+  }
+  .get-in-touch .form {
+    padding-top: 4px;
+  }
+}
 footer {
   width: 100%;
   height: 112px;
@@ -1238,6 +1340,43 @@ footer .col-10 a:nth-child(7) {
   margin-left: 58px;
 }
 
+@media (max-device-width: 1151px) {
+  footer .col-10 {
+    width: 100%;
+  }
+}
+@media (max-device-width: 952px) {
+  footer {
+    height: 100%;
+  }
+
+  .col-10 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .col-10 a:nth-child(1) {
+    padding-left: 0;
+  }
+  .col-10 a:nth-child(2) {
+    margin-right: 40px;
+  }
+  .col-10 a:nth-child(3) {
+    margin-right: 42px;
+  }
+  .col-10 a:nth-child(4) {
+    margin-right: 45px;
+  }
+  .col-10 a:nth-child(5) {
+    margin-right: 44px;
+  }
+  .col-10 a:nth-child(6) {
+    margin-right: 44px;
+  }
+  .col-10 a:nth-child(7) {
+    margin-right: 44px;
+  }
+}
 @font-face {
   font-family: "titilium";
   src: url("/fonts/TitilliumWeb-Regular.ttf") format("ttf");

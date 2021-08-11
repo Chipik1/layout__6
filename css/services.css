@@ -165,4 +165,9 @@
     margin-left: 52px;
   }
 }
+@media (max-device-width: 514px) {
+  .services-wrapper .col-12 h1 {
+    line-height: 38px;
+  }
+}
 /*# sourceMappingURL=services.css.map */
