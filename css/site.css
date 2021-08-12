@@ -18,10 +18,10 @@ header .cuda .nav-menu {
   margin-right: -4px;
   margin-top: -6px;
 }
-header .cuda .nav-menu li {
+header .cuda li {
   margin-right: 28px;
 }
-header .cuda .nav-menu li a {
+header .cuda li a {
   font-family: titillium_webregular, sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -29,11 +29,12 @@ header .cuda .nav-menu li a {
   text-transform: uppercase;
   color: #ffffff;
 }
-header .cuda .nav-menu li a:hover {
+header .cuda li a:hover {
   height: 32px;
   background-color: #643a79;
   border-radius: 5px;
   text-decoration: none;
+  color: #ffffff;
 }
 header .col-12 {
   margin: 145px auto;
@@ -85,6 +86,45 @@ header .col-12 .button a {
   }
   header .col-12 p {
     line-height: 38px;
+  }
+}
+@media (max-device-width: 991px) {
+  header {
+    height: 100%;
+  }
+  header .col-12 {
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  header .col-12 p {
+    margin-top: 34px;
+  }
+  header .cuda {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .cuda li {
+    margin-right: 0;
+  }
+  header .cuda .nav-menu {
+    padding-top: 20px;
+  }
+  header .cuda .nav-menu .navbar {
+    padding: 0.5rem 3rem;
+    justify-content: center;
+  }
+  header .cuda .nav-menu .navbar-toggler.collapsed {
+    padding: 0 90px;
+  }
+  header .cuda .nav-menu .navbar-toggler {
+    padding: 0 90px;
+    justify-content: center;
+  }
+  header .cuda .nav-menu .navbar-collapse {
+    text-align: center;
+  }
+  header .cuda .logo {
+    margin-left: 0;
   }
 }
 @font-face {
