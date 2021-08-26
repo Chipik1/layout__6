@@ -512,8 +512,8 @@ header .col-12 .button a {
   .team .icon-wrapper .col-lg-3:nth-child(1) h3 {
     margin-left: 20px;
   }
-  .team .icon-wrapper .col-lg-3:nth-child(1) .social-links {
-    margin-left: 12px;
+  .team .icon-wrapper .col-lg-3:nth-child(1) .social-links img {
+    margin: auto;
   }
   .team .icon-wrapper .col-lg-3:nth-child(2) img {
     margin-left: 5px;
@@ -521,8 +521,8 @@ header .col-12 .button a {
   .team .icon-wrapper .col-lg-3:nth-child(2) span {
     margin-left: 4px;
   }
-  .team .icon-wrapper .col-lg-3:nth-child(2) .social-links {
-    margin-left: 2px;
+  .team .icon-wrapper .col-lg-3:nth-child(2) .social-links img {
+    margin: auto;
   }
   .team .icon-wrapper .col-lg-3:nth-child(3) img {
     margin-left: 0;
@@ -530,8 +530,8 @@ header .col-12 .button a {
   .team .icon-wrapper .col-lg-3:nth-child(3) span {
     margin-right: 56px;
   }
-  .team .icon-wrapper .col-lg-3:nth-child(3) .social-links {
-    margin-right: 50px;
+  .team .icon-wrapper .col-lg-3:nth-child(3) .social-links img {
+    margin: auto;
   }
   .team .icon-wrapper .col-lg-3:nth-child(4) img {
     margin-left: 0;
@@ -540,8 +540,8 @@ header .col-12 .button a {
   .team .icon-wrapper .col-lg-3:nth-child(4) span {
     margin-left: 0;
   }
-  .team .icon-wrapper .col-lg-3:nth-child(4) .social-links {
-    margin-left: 8px;
+  .team .icon-wrapper .col-lg-3:nth-child(4) .social-links img {
+    margin: auto;
   }
 }
 @media (max-device-width: 1146px) {

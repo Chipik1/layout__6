@@ -199,8 +199,10 @@
         h3{
           margin-left: 20px;
         }
-        .social-links{
-          margin-left: 12px;
+        .social-links {
+          img {
+            margin: auto;
+          }
         }
       }
       .col-lg-3:nth-child(2){
@@ -210,8 +212,10 @@
         span{
           margin-left: 4px;
         }
-        .social-links{
-          margin-left: 2px;
+        .social-links {
+          img {
+            margin: auto;
+          }
         }
       }
       .col-lg-3:nth-child(3){
@@ -221,8 +225,10 @@
         span{
           margin-right: 56px;
         }
-        .social-links{
-          margin-right: 50px;
+        .social-links {
+          img {
+            margin: auto;
+          }
         }
       }
       .col-lg-3:nth-child(4){
@@ -234,7 +240,9 @@
           margin-left: 0;
         }
         .social-links{
-          margin-left: 8px;
+          img {
+            margin: auto;
+          }
         }
       }
     }
