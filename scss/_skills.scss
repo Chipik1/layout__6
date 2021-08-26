@@ -138,15 +138,68 @@
 }
 @media (max-device-width: 1146px) {
     .skills{
+      height: 100%;
+      padding-bottom: 50px;
       .icon-wrapper{
         width: 100%;
         flex-wrap: wrap;
       }
     }
 }
+@media (max-device-width: 1116px){
+  .skills{
+    .icon-wrapper{
+      .col-lg-3:nth-child(1){
+        span{
+          margin-right: 60px;
+        }
+        h2{
+          margin: auto;
+        }
+        img{
+          margin: auto;
+        }
+      }
+      .col-lg-3:nth-child(2){
+        span{
+          margin-right: 66px;
+        }
+        h2{
+          margin: auto;
+        }
+        img{
+          margin: auto;
+        }
+      }
+      .col-lg-3:nth-child(3){
+        span{
+          margin-right: 68px;
+        }
+        h2{
+          margin: auto;
+        }
+        img{
+          margin: auto;
+        }
+      }
+      .col-lg-3:nth-child(4){
+        span{
+          margin-right: 73px;
+        }
+        h2{
+          margin: auto;
+        }
+        img{
+          margin: auto;
+        }
+      }
+    }
+  }
+}
 @media (max-device-width: 991px) {
   .skills{
     height: 100%;
+    padding-bottom: 70px;
     .icon-wrapper{
       width: 100%;
       flex-wrap: wrap;
@@ -155,30 +208,54 @@
       }
       .col-lg-3:nth-child(1){
         img{
-          margin-left: 0;
+            margin: auto;
+        }
+        p{
+          margin-right: 8px;
+        }
+        span{
+          margin-left: 137px;
         }
       }
       .col-lg-3:nth-child(2){
         img{
-          margin-left: 0;
+          margin: auto;
+        }
+        span{
+          margin-left: 140px;
         }
       }
       .col-lg-3:nth-child(3){
+        margin-top: 90px;
         img{
-          margin-left: 0;
+          margin: auto;
         }
         p{
           margin-right: 0;
+        }
+        span{
+          margin-left: 150px;
         }
       }
       .col-lg-3:nth-child(4){
+        margin-top: 90px;
         img{
-          margin-left: 0;
+          margin: auto;
         }
         p{
           margin-right: 0;
         }
+        span{
+          margin-left: 150px;
+        }
       }
+    }
+  }
+}
+@media (max-device-width: 767px){
+  .icon-wrapper{
+    .col-lg-3{
+      margin-top: 90px;
     }
   }
 }

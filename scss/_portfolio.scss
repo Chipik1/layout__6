@@ -169,6 +169,7 @@
       line-height: 68px;
       font-weight: 600;
       letter-spacing: 0.3px;
+      padding: 0 56px;
       margin-left: 4px;
       color: #ffffff;
       text-decoration: none;
@@ -179,8 +180,32 @@
 @media (max-device-width: 1151px) {
   .portfolio {
     height: 100%;
+    padding-bottom: 70px;
     .features{
       width: 100%;
+      .col-2{
+        text-align: center;
+      }
+      .col-2:nth-child(1){
+        a{
+          margin-left: 0;
+        }
+      }
+      .col-2:nth-child(2){
+        a{
+          margin-left: 0;
+        }
+      }
+      .col-2:nth-child(3){
+        a{
+          margin-left: 0;
+        }
+      }
+      .col-2:nth-child(4){
+        a{
+          margin-left: 0;
+        }
+      }
     }
     .icon-wrapper-up{
       width: 100%;
@@ -212,16 +237,79 @@
         }
       }
     }
-    .button{
-      padding-bottom: 40px;
+  }
+}
+@media (max-device-width: 663px){
+  .portfolio{
+    .icon-wrapper-up{
+      flex-direction: column;
+      align-items: center;
+      .col-6:nth-child(1){
+        img{
+          margin-left: 0;
+        }
+        span{
+          margin-left: 0;
+        }
+      }
+      .col-6:nth-child(2){
+        margin-top: 60px;
+        img{
+          margin-left: 0;
+        }
+        span{
+          margin-right: 0;
+        }
+      }
+    }
+    .icon-wrapper-down{
+      flex-direction: column;
+      align-items: center;
+      .col-6:nth-child(1){
+        img{
+          margin-left: 0;
+        }
+      }
+      .col-6:nth-child(2){
+        margin-top: 60px;
+        img{
+          margin-left: 0;
+        }
+      }
     }
   }
 }
 @media (max-device-width: 480px){
-  .features {
-    .col-2 {
-      a {
-        background-color: #ffdd99;
+  .portfolio {
+    .features {
+      .col-2 {
+      }
+
+      .col-2:nth-child(1) {
+        a {
+          padding: 4px;
+          margin-left: -35px;
+        }
+      }
+
+      .col-2:nth-child(2) {
+        a {
+          padding: 4px;
+          margin-left: -21px;
+        }
+      }
+
+      .col-2:nth-child(3) {
+        a {
+          padding: 4px;
+          margin-left: -11px;
+        }
+      }
+
+      .col-2:nth-child(4) {
+        a {
+          padding: 4px;
+        }
       }
     }
   }

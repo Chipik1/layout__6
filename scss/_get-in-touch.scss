@@ -34,6 +34,7 @@
     margin: auto;
     justify-content: center;
     padding-top: 59px;
+    padding-right: 12px;
     input{
       width: 414px;
       height: 56px;
@@ -41,9 +42,35 @@
       border: none;
       border-radius: 5px;
       padding-top: 7px;
-      padding-left: 3px;
+      padding-left: 20px;
+      color: white;
     }
-    input::placeholder{
+    input:nth-child(1){
+      margin-left: 15px;
+      padding-left: 20px;
+    }
+    input:nth-child(2){
+      margin-left: 28px;
+      padding-left: 20px;
+    }
+    .placeinput:nth-child(3) input{
+      width: 860px;
+      height: 200px;
+      background-color: #273a71;
+      border: none;
+      border-radius: 5px;
+      padding-bottom: 141px;
+      padding-left: 20px;
+      margin-top: 12px;
+      margin-left: 140px;
+    }
+    .place_holder {
+      z-index: 100;
+      cursor: text;
+      position: absolute;
+      top: 1px;
+      left: 5px;
+      display: none;
       font-family: titillium_webregular, sans-serif;
       font-size: 18px;
       line-height: 18px;
@@ -51,32 +78,46 @@
       padding-left: 22px;
       color: #ffffff;
     }
-    input:nth-child(1){
-      margin-left: 140px;
+    .placeinput:nth-child(1) input:invalid + .place_holder {
+      display: inline;
+      position: absolute;
+      top: 19px;
+      left: 17px;
     }
-    input:nth-child(2){
-      margin-left: 28px;
+    .placeinput:nth-child(2) input:invalid + .place_holder {
+      display: inline;
+      position: absolute;
+      top: 19px;
+      left: 18px;
     }
-    input:last-child{
-      width: 860px;
-      height: 200px;
-      background-color: #273a71;
-      border: none;
-      border-radius: 5px;
-      padding-bottom: 141px;
-      padding-left: 3px;
-      margin-top: 27px;
-      margin-left: 140px;
+    .placeinput:nth-child(3) input:invalid + .place_holder {
+      display: inline;
+      position: absolute;
+      top: 32px;
+      left: 143px;
     }
-    input::placeholder:after{
-      content: "*";
-      color: #ff4444;
+    .placeinput {
+      position: relative;
+      overflow: hidden;
+      margin-right: 13px;
+    }
+    .placeinput:nth-child(1){
+      margin-left: 126px;
+    }
+    .placeinput:nth-child(2) {
+      position: relative;
+      overflow: hidden;
+      margin-right: 1px;
+    }
+
+    .place_holder span {
+      color: red;
     }
   }
   .button{
     display: flex;
     justify-content: center;
-    margin-top: 59px;
+    margin-top: 44px;
     margin-left: 1px;
     a{
       font-family: titillium_webregular, sans-serif;
@@ -84,6 +125,7 @@
       line-height: 68px;
       font-weight: 600;
       letter-spacing: 0.3px;
+      padding: 0 80px;
       margin-left: 1px;
       color: #ffffff;
       text-decoration: none;
@@ -94,24 +136,66 @@
 @media (max-device-width: 1146px) {
   .get-in-touch{
     width: 100%;
-    .form{
+    height: 100%;
+    .form {
       width: 90%;
-      input:first-child{
+      padding-right: 0;
+      .placeinput:first-child {
         width: 100%;
         margin-left: 0;
+
+        input {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .place_holder {
+          width: 100%;
+        }
+
+        input:invalid + .place_holder {
+          left: 0;
+        }
       }
-      input:nth-child(2){
+      .placeinput:nth-child(2) {
         width: 100%;
         margin-left: 0;
-        margin-top: 10px;
+
+        input {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .place_holder {
+          width: 100%;
+        }
+
+        input:invalid + .place_holder {
+          left: 0;
+        }
       }
-      input:last-child{
+
+      .placeinput:last-child {
         width: 100%;
         margin-left: 0;
+
+        input {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .place_holder {
+          width: 100%;
+        }
+
+        input:invalid + .place_holder {
+          left: 0;
+        }
       }
     }
     .button{
       margin-top: 24px;
+      padding-bottom: 70px;
     }
   }
 }

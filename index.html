@@ -286,9 +286,22 @@
   </div>
   <div class="form">
     <form>
-      <input type="text" required placeholder="Your Name" >
-      <input type="email" required placeholder="Your Email">
-      <input type="text" required placeholder="Your Message" >
+<!--      <input type="text" name="username" required="required" placeholder="Your Name">-->
+<!--      <input type="email" name="email" required="required" placeholder="Your Email">-->
+<!--      <input type="text" name="message" required="required" placeholder="Your Message">-->
+      <label class="placeinput">
+        <input required="1" type="text" id="text" />
+        <div class="place_holder">Your Name<span>*</span></div>
+      </label>
+
+      <label class="placeinput">
+        <input required="1" type="text" id="text" />
+        <div class="place_holder">Your Email<span>*</span></div>
+      </label>
+      <label class="placeinput">
+        <input required="1" type="text" id="text" />
+        <div class="place_holder">Your Message<span>*</span></div>
+      </label>
     </form>
   </div>
   <div class="button">
